@@ -1,114 +1,143 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+import React, { Component } from 'react';
+import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
+import { photo, avatar } from './assets/images';
+const { width } = Dimensions.get('window');
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            paddingLeft: (12 / 375) * width,
+            paddingRight: (10 / 375) * width,
+            paddingVertical: (9 / 375) * width,
+            borderBottomWidth: (1 / 375) * width,
+            borderBottomColor: '#DADBDA',
+          }}>
+          <Image
+            source={photo}
+            style={{ width: (25 / 375) * width, height: (23 / 375) * width }}
+          />
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+          <View style={{ flexDirection: 'row' }}>
+            <Image
+              source={photo}
+              style={{
+                width: (25 / 375) * width,
+                height: (23 / 375) * width,
+                marginRight: (18 / 375) * width,
+              }}
+            />
+            <Image
+              source={photo}
+              style={{ width: (25 / 375) * width, height: (23 / 375) * width }}
+            />
           </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
-};
+        </View>
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+        <View style={{ height: (104 / 375) * width }}>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
+              flexDirection: 'row',
+              paddingVertical: (12 / 375) * width,
+              borderBottomWidth: (1 / 375) * width,
+              borderBottomColor: '#DADBDA',
+            }}>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
+            </View>
+          </ScrollView>
+        </View>
+
+        <View style={{ flex: 1 }}>
+          <View style={{ flexDirection: 'row' }}>
+            <View>
+              <Image />
+              <View>
+                <Text>tammyolson</Text>
+                <Text>tammyolson</Text>
+              </View>
+            </View>
+            <Image />
+          </View>
+        </View>
+      </View>
+    );
+  }
+}
 
 export default App;
