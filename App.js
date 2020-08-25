@@ -27,61 +27,98 @@ class App extends Component {
           <View style={{ flexDirection: 'row' }}>
             <Image
               source={photo}
-              style={{ width: 25, height: 23, marginRight: 18 }}
+              style={{
+                width: (25 / 375) * width,
+                height: (23 / 375) * width,
+                marginRight: (18 / 375) * width,
+              }}
             />
-            <Image source={photo} style={{ width: 25, height: 23 }} />
+            <Image
+              source={photo}
+              style={{ width: (25 / 375) * width, height: (23 / 375) * width }}
+            />
           </View>
         </View>
 
-        <View style={{ height: 104 }}>
+        <View style={{ height: (104 / 375) * width }}>
           <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{
               flexDirection: 'row',
-              paddingVertical: 12,
-              borderBottomWidth: 1,
+              paddingVertical: (12 / 375) * width,
+              borderBottomWidth: (1 / 375) * width,
               borderBottomColor: '#DADBDA',
             }}>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
-            <View style={{ paddingLeft: 15 }}>
-              <Image source={avatar} style={{ width: 62, height: 62 }} />
-              <Text style={{ fontSize: 10 }}>helge_nilsen</Text>
+            <View style={{ paddingLeft: (15 / 375) * width }}>
+              <Image
+                source={avatar}
+                style={{ width: (62 / 375) * width, height: (62 / 375) * width }}
+              />
+              <Text style={{ fontSize: (10 / 375) * width }}>helge_nilsen</Text>
             </View>
           </ScrollView>
         </View>
